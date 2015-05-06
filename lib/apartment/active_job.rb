@@ -3,9 +3,10 @@ module Apartment
     extend ActiveSupport::Concern
 
     class_methods do
-      def deserialize(job_data)
-        Apartment::Tenant.switch! job_data['tenant']
-        super
+      def execute(job_data)
+        Apartment::Tenant.switch!(job_data['tenant']) do
+          super
+        end
       end
     end
 
