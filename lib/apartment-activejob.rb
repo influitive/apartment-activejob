@@ -1,4 +1,4 @@
-require "apartment/active_job.rb"
+require "apartment/active_job"
 
 
 

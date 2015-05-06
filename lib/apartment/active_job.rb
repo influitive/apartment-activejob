@@ -2,8 +2,6 @@ module Apartment
   module ActiveJob
     extend ActiveSupport::Concern
 
-    attr_accessor :tenant
-
     class_methods do
       def deserialize(job_data)
         Apartment::Tenant.switch job_data['tenant']
