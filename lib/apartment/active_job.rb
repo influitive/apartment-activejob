@@ -4,7 +4,7 @@ module Apartment
 
     class_methods do
       def deserialize(job_data)
-        Apartment::Tenant.switch job_data['tenant']
+        Apartment::Tenant.switch! job_data['tenant']
         super
       end
     end
