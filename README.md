@@ -20,7 +20,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Create a new initialization file active_job.rb in your project with the contents
+
+```ruby
+class ActiveJob::Base
+  include Apartment::ActiveJob
+end
+```
+
+You will need to restart your rails server for this to take effect.
 
 ## Contributing
 
