@@ -1,6 +1,6 @@
 # Apartment::Activejob
 
-TODO: Write a gem description
+ActiveJob support for Apartment
 
 ## Installation
 
