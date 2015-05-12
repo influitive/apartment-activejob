@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'activejob/version'
+require 'apartment/active_job/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "apartment-activejob"
-  spec.version       = Apartment::Activejob::VERSION
+  spec.version       = Apartment::ActiveJob::VERSION
   spec.authors       = ["Zulfiqar Ali"]
   spec.email         = ["zulfiqar@influitive.com"]
   spec.summary       = %q{ActiveJob support for Apartment}

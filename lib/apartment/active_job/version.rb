@@ -1,5 +1,5 @@
 module Apartment
-  module Activejob
+  module ActiveJob
     VERSION = "0.0.1"
   end
 end
